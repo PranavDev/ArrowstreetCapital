@@ -51,6 +51,20 @@ d. Random (Random no. generator) <br>
 
 ---
 
+### Starting the Application
+* Requirements:
+  * Docker installed on your local machine
+* Docker Commands:
+  * Pull the Docker Image from Repo: <br> `docker pull pdeo2020/arrowstreet:v1.0`
+  * Start the container from Image: <br> `docker run -it -d --restart unless-stopped -p 5000:5000 --name arrowstreet-container pdeo2020/arrowstreet:v1.0`
+  * Follow Docker logs: <br> `docker logs arrowstreet-container -f`
+* This will start the application on `127.0.0.1:5000` OR `localhost:5000` on your local machine.
+* Visit: `http://127.0.0.1:5000` OR `http://localhost:5000`. You will land upon a `Login` page.
+* Enter anything and login. You are not authenticated.
+* Start testing the `Portfolio Management Application`.
+
+---
+
 ### Additional Scope
 * RDS DB for Login/Registration/Caching etc.
 * CloudFormation Deployment across EC2 instances (End-2-End).
