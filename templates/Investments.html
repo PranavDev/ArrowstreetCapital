@@ -48,17 +48,6 @@ Author: Pranav H. Deo { phd24@umd.edu }
       color: white;
     }
 
-    .alert-success {
-      text-align: center;
-      padding: 7px;
-      border-radius: 3px;
-      font-size: 1.2rem;
-      margin-bottom: 16px;
-      border: 1px solid #097969;
-      background-color: #AFE1AF;
-      color: #4F7942;
-    }
-
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -76,7 +65,7 @@ Author: Pranav H. Deo { phd24@umd.edu }
     .card img {
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 200px;
     }
 
     .card:hover {
@@ -84,7 +73,7 @@ Author: Pranav H. Deo { phd24@umd.edu }
     }
 
     .container {
-      padding: 2px 16px;
+      padding: 4px 8px;
     }
 
     .alert-info {
@@ -136,10 +125,10 @@ Author: Pranav H. Deo { phd24@umd.edu }
             <article class="card">
               <img src="/static/images/{{ key }}.png" alt="Avatar">
               <div class="container">
-                <h4><b>Ticker: {{ key }}</b></h4>
-                <p>Stock Data</p>
-                <p> Profit/Loss: ${{ value[1] }} </p>
-                <p> Balance Stocks: {{ value[2] }} </p>
+                <h3><b><p> --- Styvio Data --- </p></b></h3>
+                <h4><b><p> Ticker: {{ key }} </p></b></h4>
+                <h4><b><p> Profit/Loss: ${{ value[1] }} </p></b></h4>
+                <h4><b><p> Balance Stocks: {{ value[2] }} </p></b></h4>
               </div>
             </article>
         {% endfor %}
