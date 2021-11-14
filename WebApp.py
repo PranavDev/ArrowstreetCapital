@@ -3,7 +3,7 @@
 # Date: 11/13/2021
 # Version: v1.0
 # Code Description:
-# Website and API (Beta Version) for ArrowStreetCapital.
+# Website RESTful API for ArrowStreetCapital [ Portfolio Management Tool ]
 
 # **********************************************************************************************************************
 
@@ -107,4 +107,3 @@ if __name__ == '__main__':
     app.run()
 
 # **********************************************************************************************************************
-
