@@ -1,0 +1,16 @@
+On Nov-13-21 05:13PM ArrowStreet bought 20 shares of AMZN at $3525.15 per share
+On Nov-13-21 05:13PM ArrowStreet sold 15 shares of AMZN at $3534.8524 per share
+On Nov-13-21 10:00AM ArrowStreet bought 20 shares of AAPL at $149.99 per share
+On Nov-13-21 10:00AM ArrowStreet sold 15 shares of AAPL at $160.1934 per share
+On Nov-13-21 03:15PM ArrowStreet bought 20 shares of NFLX at $606.94 per share
+On Nov-13-21 03:15PM ArrowStreet sold 15 shares of NFLX at $612.4054 per share
+On Nov-13-21 09:20PM ArrowStreet bought 20 shares of FB at $340.89 per share
+On Nov-13-21 09:20PM ArrowStreet sold 15 shares of FB at $360.794 per share
+On Nov-13-21 09:17PM ArrowStreet bought 20 shares of TSLA at $752.92 per share
+On Nov-13-21 09:17PM ArrowStreet sold 15 shares of TSLA at $769.9139 per share
+On Nov-12-21 02:09PM ArrowStreet bought 20 shares of IBM at $125.84 per share
+On Nov-12-21 02:09PM ArrowStreet sold 15 shares of IBM at $133.1954 per share
+On Nov-13-21 03:15PM ArrowStreet bought 20 shares of VIAC at $41.62 per share
+On Nov-13-21 03:15PM ArrowStreet sold 15 shares of VIAC at $60.2503 per share
+On Nov-12-21 03:11PM ArrowStreet bought 20 shares of MRAM at $7.3 per share
+On Nov-12-21 03:11PM ArrowStreet sold 15 shares of MRAM at $17.0272 per share

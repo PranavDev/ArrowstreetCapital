@@ -1,0 +1,5 @@
+# Add the styvio.com tickers here
+track_list: ['https://www.styvio.com/api/amzn', 'https://www.styvio.com/api/aapl',
+             'https://www.styvio.com/api/nflx', 'https://www.styvio.com/api/fb',
+             'https://www.styvio.com/api/tsla', 'https://www.styvio.com/api/ibm',
+             'https://www.styvio.com/api/viac', 'https://www.styvio.com/api/mram']

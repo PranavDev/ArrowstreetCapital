@@ -1,0 +1,147 @@
+<!--
+Author: Pranav H. Deo { phd24@umd.edu }
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arrowstreet: Login</title>
+  <link rel = "icon" href ="/static/images/ASC.ico" />
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #474e5d;
+}
+
+.form-wrap{
+        width: 550px;
+        height: 600px;
+        background: white;
+        padding: 20px 70px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 50px 50px 50px #000000;
+        position: fixed;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -56%);
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.alert-error {
+  text-align: center;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  border: 1px solid darkred;
+  background-color: red;
+  color: white;
+}
+
+.alert-success {
+  text-align: center;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  border: 1px solid #097969;
+  background-color: #AFE1AF;
+  color: #4F7942;
+}
+
+</style>
+</head>
+<body>
+<p>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    <span>{{ message }}</span>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</p>
+
+<h1 align="center" style="color: #FFFFFF; font-size: 45px; text-shadow: 7px 7px black;">Arrow Street Capital</h1>
+<form action="/Login" method="post" enctype="multipart/form-data" class="form-wrap">
+  <div class="container">
+    <h1>Login</h1>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="timcook@apple.com" name="email" id="email" style="font-size: 15px;" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="#AppleForever2021" name="password" id="password" style="font-size: 15px;" required>
+    <hr>
+
+    <button type="submit" class="registerbtn" style="font-size:20px">Login</button>
+  </div>
+
+  <div class="container signin">
+    <p>Don't have an account? <a href="{{url_for('Register')}}">Register</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
