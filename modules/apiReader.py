@@ -3,7 +3,7 @@
 # Date: 11/13/2021
 # Version: v1.0
 # Code Description:
-# Transaction Data Miner.
+# Transaction Data Miner - Portfolio Management Tool
 
 # **********************************************************************************************************************
 
